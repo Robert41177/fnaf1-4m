@@ -111,3 +111,14 @@ h1{
   size:82px;
   color:white;
 }
+.copyr{
+  height: 100%;
+  width: 100%;
+  background-color:rgb(0, 0, 0);
+  opacity:50%;
+}
+.copyr p{
+  color: white;
+  text-align:right;
+  opacity:100%;
+}
