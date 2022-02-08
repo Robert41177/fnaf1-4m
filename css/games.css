@@ -19,7 +19,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ffffff;
   color: rgb(53, 53, 53);
 }
 
@@ -28,6 +28,53 @@
   background-color: rgb(247, 0, 255);
   color: white;
 }
+.topnav .dropdown {
+  position: relative;
+}
+
+.topnav .dropdown a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px 12px 16px;
+  z-index: 1;
+
+}
+.dropdown-content a{
+  display: block;
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* Add an active class to highlight the current page */
+.topnav .dropdown a.active {
+  background-color: rgb(247, 0, 255);
+  color: white;
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
