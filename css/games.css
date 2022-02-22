@@ -9,7 +9,6 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -29,16 +28,24 @@
   color: white;
 }
 .topnav .dropdown {
-  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.topnav .dropdown ul{
+  list-style: none
 }
 
 .topnav .dropdown a {
+  margin: 0;
   float: left;
+  border: none;
+  outline: none;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+ 
 }
 
 /* Change the color of links on hover */
@@ -48,23 +55,24 @@
   position: absolute;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px 12px 16px;
+  padding: 12px 16px ;
   z-index: 1;
-  opacity:75%;
+  /*opacity:75%;*/
 }
 .dropdown-content a{
+  float: none;
   display: block;
   background-color: black;
   color: white;
-  text-align: center;
-  padding: 14px 16px 14px 16px;
+  text-align: left;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  opacity:75%;
+  /*opacity:75%;*/
   
   
 }
-.topnav .dropdown:hover .dropdown-content {
+ .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown-content a:hover{
